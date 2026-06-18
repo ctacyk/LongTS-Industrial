@@ -1,0 +1,97 @@
+# ============================================================
+# LongTS-Industrial — GitHub 发布 .gitignore
+# 原则：代码进 GitHub；数据集进 HuggingFace；产物/密钥/缓存不进库
+# ============================================================
+
+# ---------- 密钥 / 敏感信息 ----------
+.env
+.env.*
+!.env.example
+*.key
+*_secret*
+credentials*.json
+
+# ---------- 大文件 / 压缩包 / 训练产物 ----------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+sushi.csv
+
+# ---------- 数据集（发布到 HuggingFace，不进 GitHub） ----------
+Data/
+MultiAgentTS/Data/
+MultiAgentTS/Dataset/
+MultiAgentTS/visualizations/
+
+# ---------- 训练相关（本次不发布） ----------
+Data/training/
+Data/training_series/
+MultiAgentTS/training_data/
+
+# ---------- 内部审计报告（QA 脚手架，不对外） ----------
+results/*_report.json
+results/gt_audit_report.json
+results/physics_validation_report.json
+results/qa_verification_report.json
+results/hes_triplet_report.json
+results/human_agreement/
+results/cp1_eval_plots/
+results/embeddings_cache*.json
+results/judge_checkpoint*.json
+
+# ---------- 评测中间产物（排行榜只保留汇总表） ----------
+results/benchmark_eval_v2/*/
+!results/benchmark_eval_v2/domain_level_table.md
+!results/benchmark_eval_v2/comparison_report.json
+!results/benchmark_eval_v2/domain_level_crosstab.json
+
+# ---------- Python 缓存 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------- IDE / 系统 / 开发工具配置 ----------
+.idea/
+.vscode/
+.cursor/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# ---------- 其他临时输出 ----------
+output/
+_tmp_*
+*.log
+
+# ---------- 遗留代码（早期 EngineMT-QA / ITFormer 阶段，不发布） ----------
+htsr_eval.py
+README_HTSR_VL.md
+PROJECT_PLAN.md
+src/htsr_vl/
+configs/config.yaml
+
+# ---------- 训练相关配置/脚本（本次不发布） ----------
+configs/sft_qwen3vl_8b.yaml
+configs/grpo_config.yaml
+configs/grpo_merge.yaml
+configs/sft_merge.yaml
+configs/ds_z2_config.json
+configs/dataset_info.json
+run_full_train_eval.sh
+fix_sft_paths.py
+
+# ---------- 服务器打包 / 一次性内部脚本（不发布） ----------
+pack_for_server.py
+pack_grpo_images_patch.py
+pack_sft_v2_images.py
+pack_training_server.py
+_emit_domain_level_md.py
+_gen_crosstab.py
+_summarize_domain_level.py
+export_domain_level_word.py
+run_qa_llm_parallel.py
