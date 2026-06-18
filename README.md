@@ -4,7 +4,7 @@
 
 LongTS-Industrial 将长时间序列的多通道工业监测数据可视化为图像，要求 VLM 通过「看图」完成从整体感知、异常定位、根因分析到运维决策的分层推理。本仓库提供 **数据合成、基准构建、模型评测** 的完整可复现代码；基准数据集发布在 HuggingFace。
 
-- 📊 数据集（HuggingFace）：https://huggingface.co/datasets/ctacyk/LongTS-Industrial
+- 📊 数据集（HuggingFace）：https://huggingface.co/datasets/ANTICH/LongTS-Industrial
 - 📄 论文：（论文发表后补充）
 
 ---
