@@ -126,7 +126,7 @@ HES = DA × (0.4 × SS + 0.6 × AQ)
   title  = {LongTS-Industrial: A Benchmark for Long Time-Series Industrial Fault Reasoning with Vision-Language Models},
   author = {Chen, Tingan},
   year   = {2026},
-  note   = {https://github.com/ctacyk/LongTS-Industrial}
+  note   = {https://github.com/ctacyk/MERIT}
 }
 ```
 
