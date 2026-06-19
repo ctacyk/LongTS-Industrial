@@ -1,0 +1,25 @@
+# LongTS-Industrial dependencies
+# 数据合成 / 基准构建 / 模型评测
+
+# 核心数值计算
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# 可视化
+matplotlib>=3.4.0
+
+# LLM / VLM 调用（评测 Judge、Embedding、推理统一走 OpenAI 兼容接口）
+openai>=1.0.0
+httpx>=0.24.0
+
+# 配置与进度
+pyyaml>=6.0
+tqdm>=4.62.0
+
+# 数据读写
+h5py>=3.7.0
+
+# HuggingFace 数据集下载
+huggingface_hub>=0.17.0
+datasets>=2.14.0
