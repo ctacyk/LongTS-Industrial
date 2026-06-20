@@ -84,6 +84,10 @@ configs/ds_z2_config.json
 configs/dataset_info.json
 run_full_train_eval.sh
 fix_sft_paths.py
+generate_sft_data.py
+
+# ---------- 内部说明文档（不发布） ----------
+项目说明.md
 
 # ---------- 服务器打包 / 一次性内部脚本（不发布） ----------
 pack_for_server.py

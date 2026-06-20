@@ -53,7 +53,6 @@ Multi-model evaluation (HES framework)
 ├── MultiAgentTS/            # Per-domain synthesis, fault injection, and benchmark packaging
 │   ├── synth_tb_coal_mill.py, simulate_faults.py, ...   # Data synthesis
 │   └── benchmark_builder.py                              # Benchmark construction
-├── generate_sft_data.py     # Generate L1–L4 reference answers from metadata via LLM
 ├── compute_data_profiles.py, sensor_groups.py           # Data profiling / channel grouping
 ├── benchmark_eval.py        # HES evaluation core
 ├── run_benchmark_eval.py    # Evaluation entry point (remote API / local vLLM)

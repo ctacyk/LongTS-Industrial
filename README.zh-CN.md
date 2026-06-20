@@ -53,7 +53,6 @@ Benchmark 打包（test.jsonl）
 ├── MultiAgentTS/            # 各设备域的合成、故障注入与基准打包
 │   ├── synth_tb_coal_mill.py, simulate_faults.py, ...   # 数据合成
 │   └── benchmark_builder.py                              # 基准构建
-├── generate_sft_data.py     # 基于 metadata 用 LLM 生成 L1–L4 参考答案
 ├── compute_data_profiles.py, sensor_groups.py           # 数据画像 / 通道分组
 ├── benchmark_eval.py        # HES 评测核心
 ├── run_benchmark_eval.py    # 评测入口（远程 API / 本地 vLLM）
